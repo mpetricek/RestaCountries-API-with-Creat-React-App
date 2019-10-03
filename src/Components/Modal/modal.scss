@@ -1,0 +1,59 @@
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(black, .5);
+    z-index: 10;
+    display: none;
+    color: #555;
+    text-align: left;
+
+    &--open {
+        display: flex;
+        align-items: center;
+    }
+
+    &__inner {
+        margin: 0 auto;
+        padding: 1rem;
+        background: white;
+        max-width: 18rem;
+        border-radius: .25rem;
+
+        img {
+            max-width: 100%;
+        }
+
+        button {
+            font-weight: 600;
+            margin-left: auto;
+            display: block;
+            text-transform: uppercase;
+            cursor: pointer;
+            color: #555;
+        }
+    }
+
+    &__headline {
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 200%;
+        margin-bottom: .5rem;
+    }
+
+    &__info {
+        span {
+            font-size: .8rem;
+            line-height: 140%;
+        }
+
+        p {
+            font-weight: 600;
+            line-height: 120%;
+            margin-bottom: 1rem;
+        }
+    }
+
+}
